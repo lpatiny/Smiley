@@ -7978,13 +7978,15 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
+<class number="1" name="power" width="0.4064" drill="0">
+</class>
 </classes>
 <parts>
 <part name="IC1" library="atmel" deviceset="MEGA8" device="-AI"/>
 <part name="RC0" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
 <part name="RC1" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
 <part name="RC2" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
-<part name="RC3" library="resistor" deviceset="R-EU_" device="M1206"/>
+<part name="RC3" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
 <part name="RC4" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
 <part name="RC5" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
 <part name="RD0" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
@@ -7998,7 +8000,7 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="RB0" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
 <part name="RB1" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
 <part name="RB2" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
-<part name="RB3" library="resistor" deviceset="R-EU_" device="M1206"/>
+<part name="RB3" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
 <part name="RB4" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
 <part name="RB6A" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
 <part name="RB6B" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
@@ -8271,7 +8273,7 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="101.6" y1="12.7" x2="106.68" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="GND" class="0">
+<net name="GND" class="1">
 <segment>
 <pinref part="IC1" gate="G$1" pin="GND@2"/>
 <pinref part="IC1" gate="G$1" pin="GND@1"/>
@@ -8513,7 +8515,7 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="10.16" y1="0" x2="5.08" y2="0" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="+5V" class="0">
+<net name="+5V" class="1">
 <segment>
 <pinref part="IC1" gate="G$1" pin="VCC@2"/>
 <pinref part="P+3" gate="1" pin="+5V"/>
