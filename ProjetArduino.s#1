@@ -7984,7 +7984,7 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="RC0" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
 <part name="RC1" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
 <part name="RC2" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
-<part name="RC3" library="resistor" deviceset="R-EU_" device="M1206"/>
+<part name="RC3" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
 <part name="RC4" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
 <part name="RC5" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
 <part name="RD0" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
@@ -7998,7 +7998,7 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="RB0" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
 <part name="RB1" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
 <part name="RB2" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
-<part name="RB3" library="resistor" deviceset="R-EU_" device="M1206"/>
+<part name="RB3" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
 <part name="RB4" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
 <part name="RB6A" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
 <part name="RB6B" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>

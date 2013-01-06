@@ -5801,6 +5801,8 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="JP1" library="SparkFun" deviceset="M02" device="3.5MM"/>
 <part name="P+4" library="supply1" deviceset="+5V" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
+<part name="P+6" library="supply1" deviceset="+5V" device=""/>
+<part name="GND6" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5870,6 +5872,8 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="JP1" gate="G$1" x="0" y="20.32" rot="R180"/>
 <instance part="P+4" gate="1" x="-10.16" y="22.86"/>
 <instance part="GND5" gate="1" x="-10.16" y="15.24"/>
+<instance part="P+6" gate="1" x="20.32" y="60.96"/>
+<instance part="GND6" gate="1" x="10.16" y="60.96"/>
 </instances>
 <busses>
 </busses>
@@ -6120,6 +6124,11 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="-7.62" y1="17.78" x2="-10.16" y2="17.78" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="GND"/>
+<pinref part="GND6" gate="1" pin="GND"/>
+<wire x1="35.56" y1="63.5" x2="10.16" y2="63.5" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$1" class="0">
 <segment>
@@ -6284,6 +6293,11 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pinref part="P+4" gate="1" pin="+5V"/>
 <pinref part="JP1" gate="G$1" pin="1"/>
 <wire x1="-10.16" y1="20.32" x2="-7.62" y2="20.32" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="AVCC"/>
+<pinref part="P+6" gate="1" pin="+5V"/>
+<wire x1="35.56" y1="58.42" x2="20.32" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">

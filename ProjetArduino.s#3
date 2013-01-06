@@ -8000,9 +8000,9 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="RB2" library="resistor" deviceset="R-EU_" device="M1206"/>
 <part name="RB3" library="resistor" deviceset="R-EU_" device="M1206"/>
 <part name="RB4" library="resistor" deviceset="R-EU_" device="M1206"/>
-<part name="RB6A" library="resistor" deviceset="R-EU_" device="M1206"/>
-<part name="RB6B" library="resistor" deviceset="R-EU_" device="M1206"/>
-<part name="RB7A" library="resistor" deviceset="R-EU_" device="M1206"/>
+<part name="RB6A" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
+<part name="RB6B" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
+<part name="RB7A" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
 <part name="DB6B" library="led" deviceset="LED" device="3MM"/>
 <part name="DB7A" library="led" deviceset="LED" device="3MM"/>
 <part name="DC0" library="led" deviceset="LED" device="3MM"/>
@@ -8027,8 +8027,8 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="DD6" library="led" deviceset="LED" device="3MM"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="P+3" library="supply1" deviceset="+5V" device=""/>
-<part name="RB7B" library="resistor" deviceset="R-EU_" device="M1206"/>
-<part name="RB5" library="resistor" deviceset="R-EU_" device="M1206"/>
+<part name="RB7B" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
+<part name="RB5" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
 <part name="DB7B" library="led" deviceset="LED" device="3MM"/>
 <part name="DB5" library="led" deviceset="LED" device="3MM"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>

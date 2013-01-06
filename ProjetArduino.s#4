@@ -8045,8 +8045,8 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="P+6" library="supply1" deviceset="+5V" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
-<part name="C1" library="resistor" deviceset="C-EU" device="C1206"/>
-<part name="C2" library="resistor" deviceset="C-EU" device="C1206"/>
+<part name="C1" library="resistor" deviceset="C-EU" device="C1206" value="0.1uF"/>
+<part name="C2" library="resistor" deviceset="C-EU" device="C1206" value="0.1uF"/>
 </parts>
 <sheets>
 <sheet>

@@ -5310,9 +5310,9 @@ PNA4602 and related receivers
 <instance part="GND3" gate="1" x="119.38" y="43.18"/>
 <instance part="CON1" gate="G$1" x="58.42" y="-7.62"/>
 <instance part="U$1" gate="G$1" x="132.08" y="55.88" rot="R180"/>
-<instance part="R1" gate="G$1" x="30.48" y="68.58" rot="R180"/>
+<instance part="R1" gate="G$1" x="27.94" y="68.58" rot="R180"/>
 <instance part="P+1" gate="1" x="121.92" y="63.5"/>
-<instance part="P+2" gate="1" x="25.4" y="71.12"/>
+<instance part="P+2" gate="1" x="20.32" y="71.12"/>
 </instances>
 <busses>
 </busses>
@@ -5708,6 +5708,7 @@ PNA4602 and related receivers
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="P+2" gate="1" pin="+5V"/>
+<wire x1="20.32" y1="68.58" x2="22.86" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -5770,6 +5771,7 @@ PNA4602 and related receivers
 <segment>
 <pinref part="IC1" gate="G$1" pin="PC6(/RESET)"/>
 <pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="33.02" y1="68.58" x2="35.56" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
