@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.3">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -7247,65 +7247,6 @@ Metric Code Size 5664</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="adafruit">
-<packages>
-<package name="PNA460XM">
-<wire x1="-3.81" y1="-1.27" x2="-2.54" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="-1.27" x2="2.54" y2="-1.27" width="0.4064" layer="21"/>
-<wire x1="2.54" y1="-1.27" x2="3.81" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="3.81" y1="-1.27" x2="3.81" y2="1.27" width="0.127" layer="21"/>
-<wire x1="3.81" y1="1.27" x2="-3.81" y2="1.27" width="0.127" layer="21"/>
-<wire x1="-3.81" y1="1.27" x2="-3.81" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="2.54" y1="-1.27" x2="-2.54" y2="-1.27" width="0.4064" layer="21" curve="-112.624029"/>
-<pad name="1" x="-2.54" y="0" drill="1.016" diameter="1.9304" shape="square" rot="R90"/>
-<pad name="2" x="0" y="0" drill="1.016" diameter="1.9304" rot="R90"/>
-<pad name="3" x="2.54" y="0" drill="1.016" diameter="1.9304" rot="R90"/>
-<text x="-3.8862" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
-<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
-<rectangle x1="-2.794" y1="-0.254" x2="-2.286" y2="0.254" layer="51"/>
-</package>
-</packages>
-<symbols>
-<symbol name="PNA460XM">
-<wire x1="-5.08" y1="7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
-<wire x1="5.08" y1="7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-7.62" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-7.62" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="5.08" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="5.08" width="0.254" layer="94" curve="-180"/>
-<text x="-5.08" y="7.62" size="1.778" layer="95">&gt;NAME</text>
-<text x="-5.08" y="-10.16" size="1.778" layer="95">&gt;VALUE</text>
-<pin name="OUT" x="10.16" y="5.08" length="middle" direction="out" rot="R180"/>
-<pin name="GND" x="10.16" y="0" length="middle" direction="pwr" rot="R180"/>
-<pin name="VCC" x="10.16" y="-5.08" length="middle" direction="pwr" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="PNA460XM">
-<description>&lt;b&gt;IR 38KHz receiver&lt;/b&gt;
-&lt;p&gt;
-PNA4602 and related receivers
-&lt;p&gt;http://www.ladyada.net/library/pcb/eaglelibrary.html&lt;p&gt;</description>
-<gates>
-<gate name="G$1" symbol="PNA460XM" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="PNA460XM">
-<connects>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="OUT" pad="1"/>
-<connect gate="G$1" pin="VCC" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="lpatiny">
 <packages>
 <package name="TINYISP">
@@ -7370,6 +7311,115 @@ PNA4602 and related receivers
 <rectangle x1="-2.54" y1="-2.5146" x2="-2.159" y2="-2.3876" layer="21"/>
 <rectangle x1="-2.667" y1="-2.9718" x2="-2.413" y2="-2.7178" layer="21"/>
 </package>
+<package name="TC2030-MCP">
+<description>&lt;b&gt;TAG-CONNECT ICSP Connector&lt;/b&gt; - Legged version&lt;BR&gt;&lt;I&gt;Manufacturer:&lt;/I&gt; &lt;a href="http://www.tag-connect.com"&gt;Tag-Connect&lt;/a&gt;
+&lt;p&gt;
+Cable for easy In-Circuit Serial Programming. Designed for Microchip ICD2, suitable for many others.
+&lt;p&gt;
+&lt;b&gt;NOTE:&lt;/b&gt; Eagle's default spacing for drill holes does not leave sufficent room for routing traces for this footprint and should be adjusted. &lt;br&gt;
+This setting can be found in the board layout editor under the Edit menu.  Select "Design Rules" and then the Distance tab.  8 mils for Drill/Hole works well.
+&lt;br&gt;
+&lt;TABLE cellspacing=0 cellpadding=0 border=0&gt;
+&lt;TR&gt;&lt;TD width=20&gt;&lt;/TD&gt;&lt;TD&gt;
+&lt;TABLE cellspacing=0 cellpadding=1 border=1&gt;
+&lt;TR bgcolor=silver&gt;&lt;TD align=center&gt;PAD&lt;/TD&gt;&lt;TD align=center&gt;Description&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;1&lt;/TD&gt;&lt;TD&gt;MCLR/Vpp&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;2&lt;/TD&gt;&lt;TD&gt;Vdd&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;3&lt;/TD&gt;&lt;TD&gt;GND&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;4&lt;/TD&gt;&lt;TD&gt;PGD (ISPDAT)&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;5&lt;/TD&gt;&lt;TD&gt;PGC (ISPCLK)&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;6&lt;/TD&gt;&lt;TD&gt;nc (used for LVP)&lt;/TD&gt;&lt;/TR&gt;
+&lt;/TABLE&gt;
+&lt;/TD&gt;&lt;/TR&gt;&lt;/TABLE&gt;&lt;BR&gt;&lt;BR&gt;
+©2009 ROFA.cz - modified and updated by Robert Darlington &amp;#8249;rdarlington@gmail.com&amp;#8250;</description>
+<smd name="5V" x="1.27" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="MOSI" x="2.54" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="GND" x="3.81" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="RESET" x="3.81" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="SCK" x="2.54" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="MISO" x="1.27" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<text x="-1.27" y="-2.54" size="1.27" layer="25" rot="R90">&gt;name</text>
+<hole x="0" y="0" drill="0.889"/>
+<hole x="5.08" y="-1.016" drill="0.889"/>
+<hole x="5.08" y="1.016" drill="0.889"/>
+<hole x="0" y="2.54" drill="2.3748"/>
+<hole x="0" y="-2.54" drill="2.3748"/>
+<hole x="3.175" y="-2.54" drill="2.3748"/>
+<hole x="3.175" y="2.54" drill="2.3748"/>
+<polygon width="0.0254" layer="39">
+<vertex x="1.27" y="-0.2413"/>
+<vertex x="1.6637" y="-0.2413"/>
+<vertex x="1.6637" y="-0.635"/>
+<vertex x="2.1463" y="-0.635"/>
+<vertex x="2.1463" y="-0.2413"/>
+<vertex x="2.9337" y="-0.2413"/>
+<vertex x="2.9337" y="-0.635"/>
+<vertex x="3.4163" y="-0.635"/>
+<vertex x="3.4163" y="-0.2413"/>
+<vertex x="3.81" y="-0.2413"/>
+<vertex x="3.81" y="0.2413"/>
+<vertex x="3.4163" y="0.2413"/>
+<vertex x="3.4163" y="0.635"/>
+<vertex x="2.9337" y="0.635"/>
+<vertex x="2.9337" y="0.2413"/>
+<vertex x="2.1463" y="0.2413"/>
+<vertex x="2.1463" y="0.635"/>
+<vertex x="1.6637" y="0.635"/>
+<vertex x="1.6637" y="0.2413"/>
+<vertex x="1.27" y="0.2413"/>
+</polygon>
+</package>
+<package name="TC2030-MCP-NL">
+<description>&lt;B&gt;TAG-CONNECT ICSP Connector&lt;/B&gt;&lt;BR&gt;&lt;I&gt;Manufacturer:&lt;/I&gt; &lt;a href="www.tag-connect.com"&gt;Tag-Connect&lt;/a&gt;&lt;BR&gt;
+&lt;BR&gt;Cable for easy In-Circuit Serial Programming. Designed for Microchip ICD2, suitable for many others.&lt;BR&gt;
+
+&lt;TABLE cellspacing=0 cellpadding=0 border=0&gt;
+&lt;TR&gt;&lt;TD width=20&gt;&lt;/TD&gt;&lt;TD&gt;
+&lt;TABLE cellspacing=0 cellpadding=1 border=1&gt;
+&lt;TR bgcolor=silver&gt;&lt;TD align=center&gt;PAD&lt;/TD&gt;&lt;TD align=center&gt;Description&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;1&lt;/TD&gt;&lt;TD&gt;MCLR/Vpp&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;2&lt;/TD&gt;&lt;TD&gt;Vdd&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;3&lt;/TD&gt;&lt;TD&gt;GND&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;4&lt;/TD&gt;&lt;TD&gt;PGD (ISPDAT)&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;5&lt;/TD&gt;&lt;TD&gt;PGC (ISPCLK)&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;6&lt;/TD&gt;&lt;TD&gt;nc (used for LVP)&lt;/TD&gt;&lt;/TR&gt;
+&lt;/TABLE&gt;
+&lt;/TD&gt;&lt;/TR&gt;&lt;/TABLE&gt;&lt;BR&gt;&lt;BR&gt;
+
+©2009 ROFA.cz - modified and updated by Robert Darlington &amp;#8249;rdarlington@gmail.com&amp;#8250;</description>
+<smd name="5V" x="1.27" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="MOSI" x="2.54" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="GND" x="3.81" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="RESET" x="3.81" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="SCK" x="2.54" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="MISO" x="1.27" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<text x="-0.635" y="1.27" size="1.27" layer="25">&gt;name</text>
+<hole x="0" y="0" drill="0.889"/>
+<hole x="5.08" y="-1.016" drill="0.889"/>
+<hole x="5.08" y="1.016" drill="0.889"/>
+<polygon width="0.0254" layer="39">
+<vertex x="1.27" y="-0.2413"/>
+<vertex x="1.6637" y="-0.2413"/>
+<vertex x="1.6637" y="-0.635"/>
+<vertex x="2.1463" y="-0.635"/>
+<vertex x="2.1463" y="-0.2413"/>
+<vertex x="2.9337" y="-0.2413"/>
+<vertex x="2.9337" y="-0.635"/>
+<vertex x="3.4163" y="-0.635"/>
+<vertex x="3.4163" y="-0.2413"/>
+<vertex x="3.81" y="-0.2413"/>
+<vertex x="3.81" y="0.2413"/>
+<vertex x="3.4163" y="0.2413"/>
+<vertex x="3.4163" y="0.635"/>
+<vertex x="2.9337" y="0.635"/>
+<vertex x="2.9337" y="0.2413"/>
+<vertex x="2.1463" y="0.2413"/>
+<vertex x="2.1463" y="0.635"/>
+<vertex x="1.6637" y="0.635"/>
+<vertex x="1.6637" y="0.2413"/>
+<vertex x="1.27" y="0.2413"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="TINYISP">
@@ -7416,6 +7466,32 @@ PNA4602 and related receivers
 <attribute name="OC_FARNELL" value="unknown" constant="no"/>
 <attribute name="OC_NEWARK" value="unknown" constant="no"/>
 </technology>
+</technologies>
+</device>
+<device name="TAG" package="TC2030-MCP">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="MISO" pad="MISO"/>
+<connect gate="G$1" pin="MOSI" pad="MOSI"/>
+<connect gate="G$1" pin="RESET" pad="RESET"/>
+<connect gate="G$1" pin="SCK" pad="SCK"/>
+<connect gate="G$1" pin="VCC" pad="5V"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="T" package="TC2030-MCP-NL">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="MISO" pad="MISO"/>
+<connect gate="G$1" pin="MOSI" pad="MOSI"/>
+<connect gate="G$1" pin="RESET" pad="RESET"/>
+<connect gate="G$1" pin="SCK" pad="SCK"/>
+<connect gate="G$1" pin="VCC" pad="5V"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -7976,34 +8052,34 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0" drill="0">
+<class number="0" name="default" width="0.2032" drill="0">
 </class>
-<class number="1" name="power" width="0.4064" drill="0">
+<class number="1" name="power" width="0.254" drill="0">
 </class>
 </classes>
 <parts>
 <part name="IC1" library="atmel" deviceset="MEGA8" device="-AI"/>
-<part name="RC0" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
-<part name="RC1" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
-<part name="RC2" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
-<part name="RC3" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
-<part name="RC4" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
-<part name="RC5" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
-<part name="RD0" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
-<part name="RD1" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
-<part name="RD2" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
-<part name="RD3" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
-<part name="RD4" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
-<part name="RD5" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
-<part name="RD6" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
-<part name="RD7" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
-<part name="RB0" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
-<part name="RB1" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
-<part name="RB2" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
-<part name="RB3" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
-<part name="RB4" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
-<part name="RB6" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
-<part name="RB7" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
+<part name="RC0" library="resistor" deviceset="R-EU_" device="R0603" value="1k"/>
+<part name="RC1" library="resistor" deviceset="R-EU_" device="R0603" value="1k"/>
+<part name="RC2" library="resistor" deviceset="R-EU_" device="R0603" value="1k"/>
+<part name="RC3" library="resistor" deviceset="R-EU_" device="R0603" value="1k"/>
+<part name="RC4" library="resistor" deviceset="R-EU_" device="R0603" value="1k"/>
+<part name="RC5" library="resistor" deviceset="R-EU_" device="R0603" value="1k"/>
+<part name="RD0" library="resistor" deviceset="R-EU_" device="R0603" value="1k"/>
+<part name="RD1" library="resistor" deviceset="R-EU_" device="R0603" value="1k"/>
+<part name="RD2" library="resistor" deviceset="R-EU_" device="R0603" value="1k"/>
+<part name="RD3" library="resistor" deviceset="R-EU_" device="R0603" value="1k"/>
+<part name="RD4" library="resistor" deviceset="R-EU_" device="R0603" value="1k"/>
+<part name="RD5" library="resistor" deviceset="R-EU_" device="R0603" value="1k"/>
+<part name="RD6" library="resistor" deviceset="R-EU_" device="R0603" value="1k"/>
+<part name="RD7" library="resistor" deviceset="R-EU_" device="R0603" value="1k"/>
+<part name="RB0" library="resistor" deviceset="R-EU_" device="R0603" value="1k"/>
+<part name="RB1" library="resistor" deviceset="R-EU_" device="R0603" value="1k"/>
+<part name="RB2" library="resistor" deviceset="R-EU_" device="R0603" value="1k"/>
+<part name="RB3" library="resistor" deviceset="R-EU_" device="R0603" value="1k"/>
+<part name="RB4" library="resistor" deviceset="R-EU_" device="R0603" value="1k"/>
+<part name="RB6" library="resistor" deviceset="R-EU_" device="R0603" value="1k"/>
+<part name="RB7" library="resistor" deviceset="R-EU_" device="R0603" value="1k"/>
 <part name="DB7" library="led" deviceset="LED" device="CHIPLED-0603-TTW"/>
 <part name="DC0" library="led" deviceset="LED" device="CHIPLED-0603-TTW"/>
 <part name="DC1" library="led" deviceset="LED" device="CHIPLED-0603-TTW"/>
@@ -8027,14 +8103,12 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="DD6" library="led" deviceset="LED" device="CHIPLED-0603-TTW"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="P+3" library="supply1" deviceset="+5V" device=""/>
-<part name="RB5" library="resistor" deviceset="R-EU_" device="M1206" value="1k"/>
+<part name="RB5" library="resistor" deviceset="R-EU_" device="R0603" value="1k"/>
 <part name="DB5" library="led" deviceset="LED" device="CHIPLED-0603-TTW"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
-<part name="CON1" library="lpatiny" deviceset="TINYISP" device=""/>
-<part name="U$1" library="adafruit" deviceset="PNA460XM" device=""/>
-<part name="R1" library="resistor" deviceset="R-EU_" device="M1206" value="10k"/>
-<part name="P+1" library="supply1" deviceset="+5V" device=""/>
+<part name="CON1" library="lpatiny" deviceset="TINYISP" device="T"/>
+<part name="R1" library="resistor" deviceset="R-EU_" device="R0603" value="10k"/>
 <part name="P+2" library="supply1" deviceset="+5V" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="P+5" library="supply1" deviceset="+5V" device=""/>
@@ -8101,9 +8175,7 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="GND2" gate="1" x="116.84" y="53.34"/>
 <instance part="GND3" gate="1" x="119.38" y="43.18"/>
 <instance part="CON1" gate="G$1" x="17.78" y="-2.54"/>
-<instance part="U$1" gate="G$1" x="132.08" y="55.88" rot="R180"/>
 <instance part="R1" gate="G$1" x="27.94" y="68.58" rot="R180"/>
-<instance part="P+1" gate="1" x="119.38" y="63.5"/>
 <instance part="P+2" gate="1" x="20.32" y="71.12"/>
 <instance part="GND4" gate="1" x="30.48" y="-7.62"/>
 <instance part="P+5" gate="1" x="38.1" y="2.54"/>
@@ -8295,8 +8367,7 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <junction x="114.3" y="66.04"/>
 <junction x="114.3" y="68.58"/>
 <junction x="114.3" y="55.88"/>
-<pinref part="U$1" gate="G$1" pin="GND"/>
-<wire x1="121.92" y1="55.88" x2="116.84" y2="55.88" width="0.1524" layer="91"/>
+<junction x="116.84" y="55.88"/>
 </segment>
 <segment>
 <pinref part="DB4" gate="G$1" pin="C"/>
@@ -8501,11 +8572,6 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="7.62" y1="30.48" x2="22.86" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="VCC"/>
-<pinref part="P+1" gate="1" pin="+5V"/>
-<wire x1="119.38" y1="60.96" x2="121.92" y2="60.96" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="P+2" gate="1" pin="+5V"/>
 <wire x1="20.32" y1="68.58" x2="22.86" y2="68.58" width="0.1524" layer="91"/>
@@ -8569,15 +8635,6 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pinref part="RB6" gate="G$1" pin="2"/>
 <pinref part="DB6" gate="G$1" pin="A"/>
 <wire x1="20.32" y1="50.8" x2="15.24" y2="50.8" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$47" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="OUT"/>
-<wire x1="121.92" y1="50.8" x2="109.22" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="50.8" x2="109.22" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="ADC6"/>
-<wire x1="109.22" y1="53.34" x2="83.82" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RESET" class="0">

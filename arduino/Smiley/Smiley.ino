@@ -9,6 +9,7 @@ void setup() {
   for (int i=0; i<22; i++) {
     pinMode(i, OUTPUT);     
   }
+   pinMode(A6, INPUT); // will be used to change program
 }
 
 void loop() {

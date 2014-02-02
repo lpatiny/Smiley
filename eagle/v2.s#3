@@ -8080,31 +8080,31 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="RB4" library="resistor" deviceset="R-EU_" device="R0603" value="1k"/>
 <part name="RB6" library="resistor" deviceset="R-EU_" device="R0603" value="1k"/>
 <part name="RB7" library="resistor" deviceset="R-EU_" device="R0603" value="1k"/>
-<part name="DB7" library="led" deviceset="LED" device="CHIPLED-0603-TTW"/>
-<part name="DC0" library="led" deviceset="LED" device="CHIPLED-0603-TTW"/>
-<part name="DC1" library="led" deviceset="LED" device="CHIPLED-0603-TTW"/>
-<part name="DC2" library="led" deviceset="LED" device="CHIPLED-0603-TTW"/>
-<part name="DC3" library="led" deviceset="LED" device="CHIPLED-0603-TTW"/>
-<part name="DC4" library="led" deviceset="LED" device="CHIPLED-0603-TTW"/>
-<part name="DC5" library="led" deviceset="LED" device="CHIPLED-0603-TTW"/>
-<part name="DD0" library="led" deviceset="LED" device="CHIPLED-0603-TTW"/>
-<part name="DD1" library="led" deviceset="LED" device="CHIPLED-0603-TTW"/>
-<part name="DD2" library="led" deviceset="LED" device="CHIPLED-0603-TTW"/>
-<part name="DD3" library="led" deviceset="LED" device="CHIPLED-0603-TTW"/>
-<part name="DD4" library="led" deviceset="LED" device="CHIPLED-0603-TTW"/>
-<part name="DD5" library="led" deviceset="LED" device="CHIPLED-0603-TTW"/>
-<part name="DD7" library="led" deviceset="LED" device="CHIPLED-0603-TTW"/>
-<part name="DB0" library="led" deviceset="LED" device="CHIPLED-0603-TTW"/>
-<part name="DB1" library="led" deviceset="LED" device="CHIPLED-0603-TTW"/>
-<part name="DB2" library="led" deviceset="LED" device="CHIPLED-0603-TTW"/>
-<part name="DB3" library="led" deviceset="LED" device="CHIPLED-0603-TTW"/>
-<part name="DB4" library="led" deviceset="LED" device="CHIPLED-0603-TTW"/>
-<part name="DB6" library="led" deviceset="LED" device="CHIPLED-0603-TTW"/>
-<part name="DD6" library="led" deviceset="LED" device="CHIPLED-0603-TTW"/>
+<part name="DB7" library="led" deviceset="LED" device="CHIPLED_0603"/>
+<part name="DC0" library="led" deviceset="LED" device="CHIPLED_0603"/>
+<part name="DC1" library="led" deviceset="LED" device="CHIPLED_0603"/>
+<part name="DC2" library="led" deviceset="LED" device="CHIPLED_0603"/>
+<part name="DC3" library="led" deviceset="LED" device="CHIPLED_0603"/>
+<part name="DC4" library="led" deviceset="LED" device="CHIPLED_0603"/>
+<part name="DC5" library="led" deviceset="LED" device="CHIPLED_0603"/>
+<part name="DD0" library="led" deviceset="LED" device="CHIPLED_0603"/>
+<part name="DD1" library="led" deviceset="LED" device="CHIPLED_0603"/>
+<part name="DD2" library="led" deviceset="LED" device="CHIPLED_0603"/>
+<part name="DD3" library="led" deviceset="LED" device="CHIPLED_0603"/>
+<part name="DD4" library="led" deviceset="LED" device="CHIPLED_0603"/>
+<part name="DD5" library="led" deviceset="LED" device="CHIPLED_0603"/>
+<part name="DD7" library="led" deviceset="LED" device="CHIPLED_0603"/>
+<part name="DB0" library="led" deviceset="LED" device="CHIPLED_0603"/>
+<part name="DB1" library="led" deviceset="LED" device="CHIPLED_0603"/>
+<part name="DB2" library="led" deviceset="LED" device="CHIPLED_0603"/>
+<part name="DB3" library="led" deviceset="LED" device="CHIPLED_0603"/>
+<part name="DB4" library="led" deviceset="LED" device="CHIPLED_0603"/>
+<part name="DB6" library="led" deviceset="LED" device="CHIPLED_0603"/>
+<part name="DD6" library="led" deviceset="LED" device="CHIPLED_0603"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="P+3" library="supply1" deviceset="+5V" device=""/>
 <part name="RB5" library="resistor" deviceset="R-EU_" device="R0603" value="1k"/>
-<part name="DB5" library="led" deviceset="LED" device="CHIPLED-0603-TTW"/>
+<part name="DB5" library="led" deviceset="LED" device="CHIPLED_0603"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="CON1" library="lpatiny" deviceset="TINYISP" device="T"/>
