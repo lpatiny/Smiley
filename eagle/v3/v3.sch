@@ -5406,7 +5406,6 @@ Source: www.luxeon.com&lt;p&gt;</description>
 <part name="RB1" library="resistor" deviceset="R-EU_" device="R0402" value="1k"/>
 <part name="RB2" library="resistor" deviceset="R-EU_" device="R0402" value="1k"/>
 <part name="RB3" library="resistor" deviceset="R-EU_" device="R0402" value="1k"/>
-<part name="RB4" library="resistor" deviceset="R-EU_" device="R0402" value="1k"/>
 <part name="RB6" library="resistor" deviceset="R-EU_" device="R0402" value="1k"/>
 <part name="RB7" library="resistor" deviceset="R-EU_" device="R0402" value="1k"/>
 <part name="DB7" library="florian" deviceset="LED" device=""/>
@@ -5427,7 +5426,6 @@ Source: www.luxeon.com&lt;p&gt;</description>
 <part name="DB1" library="florian" deviceset="LED" device=""/>
 <part name="DB2" library="florian" deviceset="LED" device=""/>
 <part name="DB3" library="florian" deviceset="LED" device=""/>
-<part name="DB4" library="florian" deviceset="LED" device=""/>
 <part name="DB6" library="florian" deviceset="LED" device=""/>
 <part name="DD6" library="florian" deviceset="LED" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
@@ -5449,6 +5447,9 @@ Source: www.luxeon.com&lt;p&gt;</description>
 <part name="C1" library="eagle-ltspice" deviceset="C" device="C0402" value="0.1uF"/>
 <part name="C2" library="eagle-ltspice" deviceset="C" device="C0402" value="0.1uF"/>
 <part name="U$2" library="florian" deviceset="TEUCH4MM" device=""/>
+<part name="RD8" library="resistor" deviceset="R-EU_" device="R0402" value="10k"/>
+<part name="RD9" library="resistor" deviceset="R-EU_" device="R0402" value="1k"/>
+<part name="P+1" library="supply1" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5465,16 +5466,15 @@ Source: www.luxeon.com&lt;p&gt;</description>
 <instance part="RD0" gate="G$1" x="96.52" y="45.72"/>
 <instance part="RD1" gate="G$1" x="96.52" y="43.18"/>
 <instance part="RD2" gate="G$1" x="96.52" y="40.64"/>
-<instance part="RD3" gate="G$1" x="96.52" y="38.1"/>
-<instance part="RD4" gate="G$1" x="96.52" y="35.56"/>
-<instance part="RD5" gate="G$1" x="96.52" y="33.02"/>
-<instance part="RD6" gate="G$1" x="96.52" y="30.48"/>
-<instance part="RD7" gate="G$1" x="96.52" y="27.94"/>
-<instance part="RB0" gate="G$1" x="96.52" y="22.86"/>
-<instance part="RB1" gate="G$1" x="96.52" y="20.32"/>
-<instance part="RB2" gate="G$1" x="96.52" y="17.78"/>
-<instance part="RB3" gate="G$1" x="96.52" y="15.24"/>
-<instance part="RB4" gate="G$1" x="96.52" y="12.7"/>
+<instance part="RD3" gate="G$1" x="96.52" y="35.56"/>
+<instance part="RD4" gate="G$1" x="96.52" y="33.02"/>
+<instance part="RD5" gate="G$1" x="96.52" y="30.48"/>
+<instance part="RD6" gate="G$1" x="96.52" y="27.94"/>
+<instance part="RD7" gate="G$1" x="96.52" y="22.86"/>
+<instance part="RB0" gate="G$1" x="96.52" y="20.32"/>
+<instance part="RB1" gate="G$1" x="96.52" y="17.78"/>
+<instance part="RB2" gate="G$1" x="96.52" y="15.24"/>
+<instance part="RB3" gate="G$1" x="96.52" y="12.7"/>
 <instance part="RB6" gate="G$1" x="25.4" y="50.8" rot="R180"/>
 <instance part="RB7" gate="G$1" x="25.4" y="45.72"/>
 <instance part="DB7" gate="G$1" x="12.7" y="45.72" rot="R270"/>
@@ -5487,23 +5487,22 @@ Source: www.luxeon.com&lt;p&gt;</description>
 <instance part="DD0" gate="G$1" x="109.22" y="45.72" rot="R90"/>
 <instance part="DD1" gate="G$1" x="109.22" y="43.18" rot="R90"/>
 <instance part="DD2" gate="G$1" x="109.22" y="40.64" rot="R90"/>
-<instance part="DD3" gate="G$1" x="109.22" y="38.1" rot="R90"/>
-<instance part="DD4" gate="G$1" x="109.22" y="35.56" rot="R90"/>
-<instance part="DD5" gate="G$1" x="109.22" y="33.02" rot="R90"/>
-<instance part="DD7" gate="G$1" x="109.22" y="27.94" rot="R90"/>
-<instance part="DB0" gate="G$1" x="109.22" y="22.86" rot="R90"/>
-<instance part="DB1" gate="G$1" x="109.22" y="20.32" rot="R90"/>
-<instance part="DB2" gate="G$1" x="109.22" y="17.78" rot="R90"/>
-<instance part="DB3" gate="G$1" x="109.22" y="15.24" rot="R90"/>
-<instance part="DB4" gate="G$1" x="109.22" y="12.7" rot="R90"/>
+<instance part="DD3" gate="G$1" x="109.22" y="35.56" rot="R90"/>
+<instance part="DD4" gate="G$1" x="109.22" y="33.02" rot="R90"/>
+<instance part="DD5" gate="G$1" x="109.22" y="30.48" rot="R90"/>
+<instance part="DD7" gate="G$1" x="109.22" y="22.86" rot="R90"/>
+<instance part="DB0" gate="G$1" x="109.22" y="20.32" rot="R90"/>
+<instance part="DB1" gate="G$1" x="109.22" y="17.78" rot="R90"/>
+<instance part="DB2" gate="G$1" x="109.22" y="15.24" rot="R90"/>
+<instance part="DB3" gate="G$1" x="109.22" y="12.7" rot="R90"/>
 <instance part="DB6" gate="G$1" x="12.7" y="50.8" rot="R270"/>
-<instance part="DD6" gate="G$1" x="109.22" y="30.48" rot="R90"/>
+<instance part="DD6" gate="G$1" x="109.22" y="27.94" rot="R90"/>
 <instance part="GND1" gate="1" x="30.48" y="35.56"/>
 <instance part="P+3" gate="1" x="22.86" y="33.02"/>
 <instance part="RB5" gate="G$1" x="96.52" y="10.16"/>
 <instance part="DB5" gate="G$1" x="109.22" y="10.16" rot="R90"/>
-<instance part="GND2" gate="1" x="116.84" y="53.34"/>
-<instance part="GND3" gate="1" x="119.38" y="43.18"/>
+<instance part="GND2" gate="1" x="119.38" y="58.42"/>
+<instance part="GND3" gate="1" x="124.46" y="20.32"/>
 <instance part="CON1" gate="G$1" x="17.78" y="-2.54"/>
 <instance part="R1" gate="G$1" x="27.94" y="68.58" rot="R180"/>
 <instance part="P+2" gate="1" x="20.32" y="71.12"/>
@@ -5516,7 +5515,10 @@ Source: www.luxeon.com&lt;p&gt;</description>
 <instance part="GND6" gate="1" x="10.16" y="60.96"/>
 <instance part="C1" gate="G$1" x="27.94" y="60.96" rot="R90"/>
 <instance part="C2" gate="G$1" x="7.62" y="33.02" rot="R180"/>
-<instance part="U$2" gate="G$1" x="128.524" y="53.594"/>
+<instance part="U$2" gate="G$1" x="134.366" y="34.544" rot="R90"/>
+<instance part="RD8" gate="G$1" x="124.46" y="33.02" rot="R90"/>
+<instance part="RD9" gate="G$1" x="139.7" y="25.4" rot="R90"/>
+<instance part="P+1" gate="1" x="139.7" y="15.24" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -5533,6 +5535,8 @@ Source: www.luxeon.com&lt;p&gt;</description>
 <pinref part="RC0" gate="G$1" pin="2"/>
 <pinref part="DC0" gate="G$1" pin="A"/>
 <wire x1="101.6" y1="68.58" x2="106.68" y2="68.58" width="0.1524" layer="91"/>
+<junction x="101.6" y="68.58"/>
+<junction x="106.68" y="68.58"/>
 </segment>
 </net>
 <net name="N$26" class="0">
@@ -5540,6 +5544,8 @@ Source: www.luxeon.com&lt;p&gt;</description>
 <pinref part="RC1" gate="G$1" pin="2"/>
 <pinref part="DC1" gate="G$1" pin="A"/>
 <wire x1="101.6" y1="66.04" x2="106.68" y2="66.04" width="0.1524" layer="91"/>
+<junction x="101.6" y="66.04"/>
+<junction x="106.68" y="66.04"/>
 </segment>
 </net>
 <net name="N$27" class="0">
@@ -5547,6 +5553,8 @@ Source: www.luxeon.com&lt;p&gt;</description>
 <pinref part="RC2" gate="G$1" pin="2"/>
 <pinref part="DC2" gate="G$1" pin="A"/>
 <wire x1="101.6" y1="63.5" x2="106.68" y2="63.5" width="0.1524" layer="91"/>
+<junction x="101.6" y="63.5"/>
+<junction x="106.68" y="63.5"/>
 </segment>
 </net>
 <net name="N$28" class="0">
@@ -5554,6 +5562,8 @@ Source: www.luxeon.com&lt;p&gt;</description>
 <pinref part="RC3" gate="G$1" pin="2"/>
 <pinref part="DC3" gate="G$1" pin="A"/>
 <wire x1="101.6" y1="60.96" x2="106.68" y2="60.96" width="0.1524" layer="91"/>
+<junction x="101.6" y="60.96"/>
+<junction x="106.68" y="60.96"/>
 </segment>
 </net>
 <net name="N$29" class="0">
@@ -5561,6 +5571,8 @@ Source: www.luxeon.com&lt;p&gt;</description>
 <pinref part="RC4" gate="G$1" pin="2"/>
 <pinref part="DC4" gate="G$1" pin="A"/>
 <wire x1="101.6" y1="58.42" x2="106.68" y2="58.42" width="0.1524" layer="91"/>
+<junction x="101.6" y="58.42"/>
+<junction x="106.68" y="58.42"/>
 </segment>
 </net>
 <net name="N$30" class="0">
@@ -5568,6 +5580,8 @@ Source: www.luxeon.com&lt;p&gt;</description>
 <pinref part="RC5" gate="G$1" pin="2"/>
 <pinref part="DC5" gate="G$1" pin="A"/>
 <wire x1="101.6" y1="55.88" x2="106.68" y2="55.88" width="0.1524" layer="91"/>
+<junction x="106.68" y="55.88"/>
+<junction x="101.6" y="55.88"/>
 </segment>
 </net>
 <net name="N$31" class="0">
@@ -5575,6 +5589,8 @@ Source: www.luxeon.com&lt;p&gt;</description>
 <pinref part="RD0" gate="G$1" pin="2"/>
 <pinref part="DD0" gate="G$1" pin="A"/>
 <wire x1="101.6" y1="45.72" x2="106.68" y2="45.72" width="0.1524" layer="91"/>
+<junction x="101.6" y="45.72"/>
+<junction x="106.68" y="45.72"/>
 </segment>
 </net>
 <net name="N$32" class="0">
@@ -5582,6 +5598,8 @@ Source: www.luxeon.com&lt;p&gt;</description>
 <pinref part="RD1" gate="G$1" pin="2"/>
 <pinref part="DD1" gate="G$1" pin="A"/>
 <wire x1="101.6" y1="43.18" x2="106.68" y2="43.18" width="0.1524" layer="91"/>
+<junction x="101.6" y="43.18"/>
+<junction x="106.68" y="43.18"/>
 </segment>
 </net>
 <net name="N$33" class="0">
@@ -5589,76 +5607,87 @@ Source: www.luxeon.com&lt;p&gt;</description>
 <pinref part="RD2" gate="G$1" pin="2"/>
 <pinref part="DD2" gate="G$1" pin="A"/>
 <wire x1="101.6" y1="40.64" x2="106.68" y2="40.64" width="0.1524" layer="91"/>
+<junction x="101.6" y="40.64"/>
+<junction x="106.68" y="40.64"/>
 </segment>
 </net>
 <net name="N$34" class="0">
 <segment>
 <pinref part="RD3" gate="G$1" pin="2"/>
 <pinref part="DD3" gate="G$1" pin="A"/>
-<wire x1="101.6" y1="38.1" x2="106.68" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="35.56" x2="106.68" y2="35.56" width="0.1524" layer="91"/>
+<junction x="101.6" y="35.56"/>
+<junction x="106.68" y="35.56"/>
 </segment>
 </net>
 <net name="N$35" class="0">
 <segment>
 <pinref part="RD4" gate="G$1" pin="2"/>
 <pinref part="DD4" gate="G$1" pin="A"/>
-<wire x1="101.6" y1="35.56" x2="106.68" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="33.02" x2="106.68" y2="33.02" width="0.1524" layer="91"/>
+<junction x="101.6" y="33.02"/>
 </segment>
 </net>
 <net name="N$36" class="0">
 <segment>
 <pinref part="RD5" gate="G$1" pin="2"/>
 <pinref part="DD5" gate="G$1" pin="A"/>
-<wire x1="101.6" y1="33.02" x2="106.68" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="30.48" x2="106.68" y2="30.48" width="0.1524" layer="91"/>
+<junction x="101.6" y="30.48"/>
 </segment>
 </net>
 <net name="N$37" class="0">
 <segment>
 <pinref part="RD6" gate="G$1" pin="2"/>
 <pinref part="DD6" gate="G$1" pin="A"/>
-<wire x1="101.6" y1="30.48" x2="106.68" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="27.94" x2="106.68" y2="27.94" width="0.1524" layer="91"/>
+<junction x="101.6" y="27.94"/>
+<junction x="106.68" y="27.94"/>
 </segment>
 </net>
 <net name="N$38" class="0">
 <segment>
 <pinref part="RD7" gate="G$1" pin="2"/>
 <pinref part="DD7" gate="G$1" pin="A"/>
-<wire x1="101.6" y1="27.94" x2="106.68" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="22.86" x2="106.68" y2="22.86" width="0.1524" layer="91"/>
+<junction x="101.6" y="22.86"/>
+<junction x="106.68" y="22.86"/>
 </segment>
 </net>
 <net name="N$39" class="0">
 <segment>
 <pinref part="RB0" gate="G$1" pin="2"/>
 <pinref part="DB0" gate="G$1" pin="A"/>
-<wire x1="101.6" y1="22.86" x2="106.68" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="20.32" x2="106.68" y2="20.32" width="0.1524" layer="91"/>
+<junction x="101.6" y="20.32"/>
+<junction x="106.68" y="20.32"/>
 </segment>
 </net>
 <net name="N$40" class="0">
 <segment>
 <pinref part="RB1" gate="G$1" pin="2"/>
 <pinref part="DB1" gate="G$1" pin="A"/>
-<wire x1="101.6" y1="20.32" x2="106.68" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="17.78" x2="106.68" y2="17.78" width="0.1524" layer="91"/>
+<junction x="101.6" y="17.78"/>
+<junction x="106.68" y="17.78"/>
 </segment>
 </net>
 <net name="N$41" class="0">
 <segment>
 <pinref part="RB2" gate="G$1" pin="2"/>
 <pinref part="DB2" gate="G$1" pin="A"/>
-<wire x1="101.6" y1="17.78" x2="106.68" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="15.24" x2="106.68" y2="15.24" width="0.1524" layer="91"/>
+<junction x="101.6" y="15.24"/>
+<junction x="106.68" y="15.24"/>
 </segment>
 </net>
 <net name="N$42" class="0">
 <segment>
 <pinref part="RB3" gate="G$1" pin="2"/>
 <pinref part="DB3" gate="G$1" pin="A"/>
-<wire x1="101.6" y1="15.24" x2="106.68" y2="15.24" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$43" class="0">
-<segment>
-<pinref part="RB4" gate="G$1" pin="2"/>
-<pinref part="DB4" gate="G$1" pin="A"/>
 <wire x1="101.6" y1="12.7" x2="106.68" y2="12.7" width="0.1524" layer="91"/>
+<junction x="101.6" y="12.7"/>
+<junction x="106.68" y="12.7"/>
 </segment>
 </net>
 <net name="GND" class="1">
@@ -5679,78 +5708,6 @@ Source: www.luxeon.com&lt;p&gt;</description>
 <junction x="7.62" y="38.1"/>
 </segment>
 <segment>
-<pinref part="DC0" gate="G$1" pin="C"/>
-<pinref part="DC1" gate="G$1" pin="C"/>
-<wire x1="114.3" y1="68.58" x2="114.3" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="DC2" gate="G$1" pin="C"/>
-<wire x1="114.3" y1="66.04" x2="114.3" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="DC3" gate="G$1" pin="C"/>
-<wire x1="114.3" y1="63.5" x2="114.3" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="DC4" gate="G$1" pin="C"/>
-<wire x1="114.3" y1="60.96" x2="114.3" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="DC5" gate="G$1" pin="C"/>
-<wire x1="114.3" y1="58.42" x2="114.3" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="55.88" x2="116.84" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="GND2" gate="1" pin="GND"/>
-<junction x="114.3" y="58.42"/>
-<junction x="114.3" y="60.96"/>
-<junction x="114.3" y="63.5"/>
-<junction x="114.3" y="66.04"/>
-<junction x="114.3" y="68.58"/>
-<junction x="114.3" y="55.88"/>
-<junction x="116.84" y="55.88"/>
-<wire x1="132.08" y1="58.42" x2="124.46" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="58.42" x2="116.84" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="58.42" x2="116.84" y2="55.88" width="0.1524" layer="91"/>
-<junction x="124.46" y="58.42"/>
-<junction x="132.08" y="58.42"/>
-</segment>
-<segment>
-<pinref part="DB4" gate="G$1" pin="C"/>
-<pinref part="DD0" gate="G$1" pin="C"/>
-<wire x1="114.3" y1="12.7" x2="114.3" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="15.24" x2="114.3" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="17.78" x2="114.3" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="20.32" x2="114.3" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="22.86" x2="114.3" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="27.94" x2="114.3" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="30.48" x2="114.3" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="33.02" x2="114.3" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="35.56" x2="114.3" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="38.1" x2="114.3" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="40.64" x2="114.3" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="43.18" x2="114.3" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="45.72" x2="119.38" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="DB3" gate="G$1" pin="C"/>
-<junction x="114.3" y="15.24"/>
-<pinref part="DB2" gate="G$1" pin="C"/>
-<junction x="114.3" y="17.78"/>
-<pinref part="DB1" gate="G$1" pin="C"/>
-<junction x="114.3" y="20.32"/>
-<pinref part="DB0" gate="G$1" pin="C"/>
-<junction x="114.3" y="22.86"/>
-<pinref part="DD7" gate="G$1" pin="C"/>
-<junction x="114.3" y="27.94"/>
-<pinref part="DD6" gate="G$1" pin="C"/>
-<junction x="114.3" y="30.48"/>
-<pinref part="DD5" gate="G$1" pin="C"/>
-<junction x="114.3" y="33.02"/>
-<pinref part="DD4" gate="G$1" pin="C"/>
-<junction x="114.3" y="35.56"/>
-<pinref part="DD3" gate="G$1" pin="C"/>
-<junction x="114.3" y="38.1"/>
-<pinref part="DD2" gate="G$1" pin="C"/>
-<junction x="114.3" y="40.64"/>
-<pinref part="DD1" gate="G$1" pin="C"/>
-<junction x="114.3" y="43.18"/>
-<junction x="114.3" y="45.72"/>
-<pinref part="GND3" gate="1" pin="GND"/>
-<junction x="119.38" y="45.72"/>
-<pinref part="DB5" gate="G$1" pin="C"/>
-<wire x1="114.3" y1="10.16" x2="114.3" y2="12.7" width="0.1524" layer="91"/>
-<junction x="114.3" y="12.7"/>
-</segment>
-<segment>
 <pinref part="GND4" gate="1" pin="GND"/>
 <pinref part="CON1" gate="G$1" pin="GND"/>
 <wire x1="30.48" y1="-5.08" x2="25.4" y2="-5.08" width="0.1524" layer="91"/>
@@ -5765,6 +5722,66 @@ Source: www.luxeon.com&lt;p&gt;</description>
 <pinref part="GND6" gate="1" pin="GND"/>
 <wire x1="35.56" y1="63.5" x2="10.16" y2="63.5" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="DC0" gate="G$1" pin="C"/>
+<pinref part="DC1" gate="G$1" pin="C"/>
+<wire x1="114.3" y1="68.58" x2="114.3" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="DC2" gate="G$1" pin="C"/>
+<wire x1="114.3" y1="66.04" x2="114.3" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="DC3" gate="G$1" pin="C"/>
+<wire x1="114.3" y1="63.5" x2="114.3" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="DC4" gate="G$1" pin="C"/>
+<wire x1="114.3" y1="60.96" x2="114.3" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="DC5" gate="G$1" pin="C"/>
+<wire x1="114.3" y1="58.42" x2="114.3" y2="55.88" width="0.1524" layer="91"/>
+<junction x="114.3" y="58.42"/>
+<junction x="114.3" y="60.96"/>
+<junction x="114.3" y="63.5"/>
+<junction x="114.3" y="66.04"/>
+<junction x="114.3" y="68.58"/>
+<pinref part="GND2" gate="1" pin="GND"/>
+<wire x1="119.38" y1="60.96" x2="114.3" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="DD0" gate="G$1" pin="C"/>
+<wire x1="114.3" y1="43.18" x2="114.3" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="DD1" gate="G$1" pin="C"/>
+<junction x="114.3" y="43.18"/>
+<wire x1="114.3" y1="40.64" x2="114.3" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="DD2" gate="G$1" pin="C"/>
+<wire x1="114.3" y1="55.88" x2="114.3" y2="45.72" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="114.3" y1="12.7" x2="114.3" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="15.24" x2="114.3" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="17.78" x2="114.3" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="20.32" x2="114.3" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="22.86" x2="114.3" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="27.94" x2="114.3" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="30.48" x2="114.3" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="33.02" x2="114.3" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="DB3" gate="G$1" pin="C"/>
+<junction x="114.3" y="12.7"/>
+<pinref part="DB2" gate="G$1" pin="C"/>
+<junction x="114.3" y="15.24"/>
+<pinref part="DB1" gate="G$1" pin="C"/>
+<junction x="114.3" y="17.78"/>
+<pinref part="DB0" gate="G$1" pin="C"/>
+<junction x="114.3" y="20.32"/>
+<pinref part="DD7" gate="G$1" pin="C"/>
+<junction x="114.3" y="22.86"/>
+<pinref part="DD6" gate="G$1" pin="C"/>
+<junction x="114.3" y="27.94"/>
+<pinref part="DD5" gate="G$1" pin="C"/>
+<junction x="114.3" y="30.48"/>
+<pinref part="DD4" gate="G$1" pin="C"/>
+<junction x="114.3" y="33.02"/>
+<pinref part="DD3" gate="G$1" pin="C"/>
+<pinref part="DB5" gate="G$1" pin="C"/>
+<wire x1="114.3" y1="10.16" x2="114.3" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="GND3" gate="1" pin="GND"/>
+<wire x1="114.3" y1="22.86" x2="124.46" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="RD8" gate="G$1" pin="1"/>
+<wire x1="124.46" y1="22.86" x2="124.46" y2="27.94" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$1" class="0">
 <segment>
@@ -5778,6 +5795,8 @@ Source: www.luxeon.com&lt;p&gt;</description>
 <pinref part="IC1" gate="G$1" pin="PC0(ADC0)"/>
 <pinref part="RC0" gate="G$1" pin="1"/>
 <wire x1="83.82" y1="68.58" x2="91.44" y2="68.58" width="0.1524" layer="91"/>
+<junction x="91.44" y="68.58"/>
+<junction x="83.82" y="68.58"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -5785,6 +5804,8 @@ Source: www.luxeon.com&lt;p&gt;</description>
 <pinref part="RC3" gate="G$1" pin="1"/>
 <pinref part="IC1" gate="G$1" pin="PC3(ADC3)"/>
 <wire x1="91.44" y1="60.96" x2="83.82" y2="60.96" width="0.1524" layer="91"/>
+<junction x="83.82" y="60.96"/>
+<junction x="91.44" y="60.96"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -5792,6 +5813,8 @@ Source: www.luxeon.com&lt;p&gt;</description>
 <pinref part="RC2" gate="G$1" pin="1"/>
 <pinref part="IC1" gate="G$1" pin="PC2(ADC2)"/>
 <wire x1="91.44" y1="63.5" x2="83.82" y2="63.5" width="0.1524" layer="91"/>
+<junction x="83.82" y="63.5"/>
+<junction x="91.44" y="63.5"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -5799,6 +5822,8 @@ Source: www.luxeon.com&lt;p&gt;</description>
 <pinref part="RC4" gate="G$1" pin="1"/>
 <pinref part="IC1" gate="G$1" pin="PC4(ADC4/SDA)"/>
 <wire x1="91.44" y1="58.42" x2="83.82" y2="58.42" width="0.1524" layer="91"/>
+<junction x="83.82" y="58.42"/>
+<junction x="91.44" y="58.42"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -5806,6 +5831,8 @@ Source: www.luxeon.com&lt;p&gt;</description>
 <pinref part="RC5" gate="G$1" pin="1"/>
 <pinref part="IC1" gate="G$1" pin="PC5(ADC5/SCL)"/>
 <wire x1="91.44" y1="55.88" x2="83.82" y2="55.88" width="0.1524" layer="91"/>
+<junction x="83.82" y="55.88"/>
+<junction x="91.44" y="55.88"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -5813,6 +5840,8 @@ Source: www.luxeon.com&lt;p&gt;</description>
 <pinref part="RD0" gate="G$1" pin="1"/>
 <pinref part="IC1" gate="G$1" pin="PD0(RXD)"/>
 <wire x1="91.44" y1="45.72" x2="83.82" y2="45.72" width="0.1524" layer="91"/>
+<junction x="83.82" y="45.72"/>
+<junction x="91.44" y="45.72"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -5820,13 +5849,8 @@ Source: www.luxeon.com&lt;p&gt;</description>
 <pinref part="RD1" gate="G$1" pin="1"/>
 <pinref part="IC1" gate="G$1" pin="PD1(TXD)"/>
 <wire x1="91.44" y1="43.18" x2="83.82" y2="43.18" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$11" class="0">
-<segment>
-<pinref part="RD3" gate="G$1" pin="1"/>
-<pinref part="IC1" gate="G$1" pin="PD3(INT1)"/>
-<wire x1="91.44" y1="38.1" x2="83.82" y2="38.1" width="0.1524" layer="91"/>
+<junction x="83.82" y="43.18"/>
+<junction x="91.44" y="43.18"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -5834,63 +5858,11 @@ Source: www.luxeon.com&lt;p&gt;</description>
 <pinref part="RD2" gate="G$1" pin="1"/>
 <pinref part="IC1" gate="G$1" pin="PD2(INT0)"/>
 <wire x1="91.44" y1="40.64" x2="83.82" y2="40.64" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$13" class="0">
-<segment>
-<pinref part="RD5" gate="G$1" pin="1"/>
-<pinref part="IC1" gate="G$1" pin="PD5(T1)"/>
-<wire x1="91.44" y1="33.02" x2="83.82" y2="33.02" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$14" class="0">
-<segment>
-<pinref part="RD4" gate="G$1" pin="1"/>
-<pinref part="IC1" gate="G$1" pin="PD4(XCK/T0)"/>
-<wire x1="91.44" y1="35.56" x2="83.82" y2="35.56" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$15" class="0">
-<segment>
-<pinref part="RD6" gate="G$1" pin="1"/>
-<pinref part="IC1" gate="G$1" pin="PD6(AIN0)"/>
-<wire x1="91.44" y1="30.48" x2="83.82" y2="30.48" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$16" class="0">
-<segment>
-<pinref part="RD7" gate="G$1" pin="1"/>
-<pinref part="IC1" gate="G$1" pin="PD7(AIN1)"/>
-<wire x1="91.44" y1="27.94" x2="83.82" y2="27.94" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$17" class="0">
-<segment>
-<pinref part="RB0" gate="G$1" pin="1"/>
-<pinref part="IC1" gate="G$1" pin="PB0(ICP)"/>
-<wire x1="91.44" y1="22.86" x2="83.82" y2="22.86" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$18" class="0">
-<segment>
-<pinref part="RB1" gate="G$1" pin="1"/>
-<pinref part="IC1" gate="G$1" pin="PB1(OC1A)"/>
-<wire x1="91.44" y1="20.32" x2="83.82" y2="20.32" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$19" class="0">
-<segment>
-<pinref part="RB2" gate="G$1" pin="1"/>
-<pinref part="IC1" gate="G$1" pin="PB2(SS/OC1B)"/>
-<wire x1="91.44" y1="17.78" x2="83.82" y2="17.78" width="0.1524" layer="91"/>
+<junction x="83.82" y="40.64"/>
+<junction x="91.44" y="40.64"/>
 </segment>
 </net>
 <net name="MISO" class="0">
-<segment>
-<pinref part="RB4" gate="G$1" pin="1"/>
-<pinref part="IC1" gate="G$1" pin="PB4(MISO)"/>
-<wire x1="91.44" y1="12.7" x2="83.82" y2="12.7" width="0.1524" layer="91"/>
-</segment>
 <segment>
 <pinref part="CON1" gate="G$1" pin="MISO"/>
 <wire x1="10.16" y1="0" x2="5.08" y2="0" width="0.1524" layer="91"/>
@@ -5933,20 +5905,22 @@ Source: www.luxeon.com&lt;p&gt;</description>
 <junction x="20.32" y="58.42"/>
 <junction x="22.86" y="58.42"/>
 </segment>
+<segment>
+<pinref part="RD9" gate="G$1" pin="1"/>
+<pinref part="P+1" gate="1" pin="+5V"/>
+<wire x1="139.7" y1="20.32" x2="139.7" y2="17.78" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$2" class="0">
 <segment>
 <pinref part="RC1" gate="G$1" pin="1"/>
 <pinref part="IC1" gate="G$1" pin="PC1(ADC1)"/>
 <wire x1="91.44" y1="66.04" x2="83.82" y2="66.04" width="0.1524" layer="91"/>
+<junction x="83.82" y="66.04"/>
+<junction x="91.44" y="66.04"/>
 </segment>
 </net>
 <net name="SCK" class="0">
-<segment>
-<pinref part="RB5" gate="G$1" pin="1"/>
-<pinref part="IC1" gate="G$1" pin="PB5(SCK)"/>
-<wire x1="91.44" y1="10.16" x2="83.82" y2="10.16" width="0.1524" layer="91"/>
-</segment>
 <segment>
 <pinref part="CON1" gate="G$1" pin="SCK"/>
 <wire x1="10.16" y1="-2.54" x2="5.08" y2="-2.54" width="0.1524" layer="91"/>
@@ -5964,6 +5938,8 @@ Source: www.luxeon.com&lt;p&gt;</description>
 <pinref part="DB5" gate="G$1" pin="A"/>
 <pinref part="RB5" gate="G$1" pin="2"/>
 <wire x1="106.68" y1="10.16" x2="101.6" y2="10.16" width="0.1524" layer="91"/>
+<junction x="101.6" y="10.16"/>
+<junction x="106.68" y="10.16"/>
 </segment>
 </net>
 <net name="N$44" class="0">
@@ -5989,29 +5965,12 @@ Source: www.luxeon.com&lt;p&gt;</description>
 <pinref part="CON1" gate="G$1" pin="MOSI"/>
 <wire x1="25.4" y1="-2.54" x2="30.48" y2="-2.54" width="0.1524" layer="91"/>
 </segment>
-<segment>
-<pinref part="RB3" gate="G$1" pin="1"/>
-<pinref part="IC1" gate="G$1" pin="PB3(MOSI/OC2)"/>
-<wire x1="91.44" y1="15.24" x2="83.82" y2="15.24" width="0.1524" layer="91"/>
-</segment>
 </net>
 <net name="N$4" class="0">
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
 <pinref part="IC1" gate="G$1" pin="AREF"/>
 <wire x1="33.02" y1="60.96" x2="35.56" y2="60.96" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$20" class="0">
-<segment>
-<wire x1="132.08" y1="48.26" x2="124.46" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="48.26" x2="99.06" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="48.26" x2="99.06" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="ADC6"/>
-<wire x1="99.06" y1="53.34" x2="83.82" y2="53.34" width="0.1524" layer="91"/>
-<junction x="83.82" y="53.34"/>
-<junction x="132.08" y="48.26"/>
-<junction x="124.46" y="48.26"/>
 </segment>
 </net>
 <net name="N$22" class="0">
@@ -6024,6 +5983,85 @@ Source: www.luxeon.com&lt;p&gt;</description>
 <segment>
 <pinref part="U$2" gate="G$1" pin="3"/>
 <pinref part="U$2" gate="G$1" pin="4"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="PB5(SCK)"/>
+<pinref part="RB5" gate="G$1" pin="1"/>
+<wire x1="83.82" y1="10.16" x2="91.44" y2="10.16" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<pinref part="RB3" gate="G$1" pin="1"/>
+<pinref part="IC1" gate="G$1" pin="PB4(MISO)"/>
+<wire x1="91.44" y1="12.7" x2="83.82" y2="12.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="PB3(MOSI/OC2)"/>
+<pinref part="RB2" gate="G$1" pin="1"/>
+<wire x1="83.82" y1="15.24" x2="91.44" y2="15.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="RB1" gate="G$1" pin="1"/>
+<pinref part="IC1" gate="G$1" pin="PB2(SS/OC1B)"/>
+<wire x1="91.44" y1="17.78" x2="83.82" y2="17.78" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$16" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="PB1(OC1A)"/>
+<pinref part="RB0" gate="G$1" pin="1"/>
+<wire x1="83.82" y1="20.32" x2="91.44" y2="20.32" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$17" class="0">
+<segment>
+<pinref part="RD7" gate="G$1" pin="1"/>
+<pinref part="IC1" gate="G$1" pin="PB0(ICP)"/>
+<wire x1="91.44" y1="22.86" x2="83.82" y2="22.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$18" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="PD7(AIN1)"/>
+<pinref part="RD6" gate="G$1" pin="1"/>
+<wire x1="83.82" y1="27.94" x2="91.44" y2="27.94" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$19" class="0">
+<segment>
+<pinref part="RD5" gate="G$1" pin="1"/>
+<pinref part="IC1" gate="G$1" pin="PD6(AIN0)"/>
+<wire x1="91.44" y1="30.48" x2="83.82" y2="30.48" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$20" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="PD5(T1)"/>
+<pinref part="RD4" gate="G$1" pin="1"/>
+<wire x1="83.82" y1="33.02" x2="91.44" y2="33.02" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$43" class="0">
+<segment>
+<pinref part="RD3" gate="G$1" pin="1"/>
+<pinref part="IC1" gate="G$1" pin="PD4(XCK/T0)"/>
+<wire x1="91.44" y1="35.56" x2="83.82" y2="35.56" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$45" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="PD3(INT1)"/>
+<wire x1="83.82" y1="38.1" x2="124.46" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="RD8" gate="G$1" pin="2"/>
+<wire x1="124.46" y1="38.1" x2="129.54" y2="38.1" width="0.1524" layer="91"/>
+<junction x="124.46" y="38.1"/>
 </segment>
 </net>
 </nets>
