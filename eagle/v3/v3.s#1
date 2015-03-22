@@ -5447,8 +5447,8 @@ Source: www.luxeon.com&lt;p&gt;</description>
 <part name="C1" library="eagle-ltspice" deviceset="C" device="C0402" value="0.1uF"/>
 <part name="C2" library="eagle-ltspice" deviceset="C" device="C0402" value="0.1uF"/>
 <part name="U$2" library="florian" deviceset="TEUCH4MM" device=""/>
-<part name="RD8" library="resistor" deviceset="R-EU_" device="R0402" value="100k"/>
-<part name="RD9" library="resistor" deviceset="R-EU_" device="R0402" value="100k"/>
+<part name="RD8" library="resistor" deviceset="R-EU_" device="R0402" value="10k"/>
+<part name="RD9" library="resistor" deviceset="R-EU_" device="R0402" value="1k"/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
 </parts>
 <sheets>

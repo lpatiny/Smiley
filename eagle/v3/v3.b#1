@@ -1699,8 +1699,8 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="C" x="11.43" y="31.75" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="U$2" library="florian" package="TEUCH4MM" value="TEUCH4MM" x="4.445" y="-6.985"/>
-<element name="RD8" library="resistor" package="R0402" value="100k" x="1.905" y="-13.335"/>
-<element name="RD9" library="resistor" package="R0402" value="100k" x="1.905" y="-18.415"/>
+<element name="RD8" library="resistor" package="R0402" value="10k" x="1.905" y="-13.335"/>
+<element name="RD9" library="resistor" package="R0402" value="1k" x="1.905" y="-18.415"/>
 </elements>
 <signals>
 <signal name="GND" class="1">
