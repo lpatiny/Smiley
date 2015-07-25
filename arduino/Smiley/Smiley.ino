@@ -36,5 +36,9 @@ void smiley3() {
   eteintTout();
 }
 
+void smiley4() {
+ allumeTout(); 
+}
+
 
 
